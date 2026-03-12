@@ -6,6 +6,7 @@ int n;        // membuat variable inputan n
 
 void input() //procedure input
 {
+    while (true) {
     cout << "Masukan Jumlah Data Pada Array : ";
         cin >> n;
 
@@ -13,8 +14,21 @@ void input() //procedure input
         {
             break;
         }
-        else
+        else 
         {
             cout << "\nArray Tidak Boleh Lebih Dari 20\n";
         }
+    }
+    cout << endl;
+    cout << "=============================================";
+    cout << "=============Masukkan Element Array==========";
+    cout << "=============================================" << endl;
+
+    for (int i = 0; i < n; i++)
+    {
+        cout << "Data ke-" << (i + 1) << ": ";
+        cin >> arr[i];
+    }
+
+
 }
