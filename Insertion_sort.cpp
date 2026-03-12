@@ -6,5 +6,6 @@ int n;        // membuat variable inputan n
 
 void input() //procedure input
 {
-    
+    cout << "Masukan Jumlah Data Pada Array : ";
+        cin >> n;
 }
